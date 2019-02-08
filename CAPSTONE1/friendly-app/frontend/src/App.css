@@ -1,0 +1,562 @@
+body {
+  font-family: arial;
+}
+
+.launch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 100vw;
+  height: 100vh;
+  background: url("../src/Capstone_Assets/hands-heart-love_3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.launch .navButtonForward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 85%;
+  margin-left: 85%;
+}
+
+.launch .navButtonForward a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 50%;
+}
+
+.launch .navButtonForward a img {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  -webkit-animation-name: arrowSlide;
+          animation-name: arrowSlide;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrowSlide {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 10px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes arrowSlide {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 10px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.searchViewContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: url("../src/Capstone_Assets/hands-heart-love_2_light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.searchViewContainer .navBarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.searchViewContainer .navBarContainer .navSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96%;
+  height: 87%;
+  border-radius: 2px;
+  background-color: #fff0f6;
+  -webkit-box-shadow: 1px 5px 10px #cbcbcb;
+          box-shadow: 1px 5px 10px #cbcbcb;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .menu {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 13%;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: #3b1e3b solid 1px;
+  border-radius: 3px;
+  width: 95%;
+  height: 69%;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .searchBar .searchInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 71%;
+  height: 77%;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .searchBar .searchInputContainer input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding-left: 3%;
+  margin-left: 1%;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .searchBar .searchInputContainer input:focus {
+  outline: 3px solid #f2f2f2;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .searchBar .searchIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1%;
+  padding-right: 4%;
+  margin-left: 1%;
+  background-color: white;
+  border: none;
+  border-right: 0.25px solid #c0c0c0;
+}
+
+.searchViewContainer .navBarContainer .navSearch .navSearch__panel .searchBar .closeIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1%;
+  margin-left: 4%;
+}
+
+.searchViewContainer .map-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 89vh;
+}
+
+.searchViewContainer .map-view .map-view__panel {
+  position: relative;
+  width: 96%;
+  height: 88%;
+  background-color: white;
+  margin-top: 1%;
+  -webkit-box-shadow: 1px 5px 10px #cbcbcb;
+          box-shadow: 1px 5px 10px #cbcbcb;
+}
+
+.searchViewContainer .map-view .map-view__panel .logo-bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 22%;
+  width: 16%;
+}
+
+.searchViewContainer .map-view .bottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 1vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96vw;
+  height: 9vh;
+  color: #3b1e3b;
+  font-weight: bold;
+  border-radius: 2px;
+  border: solid 1px #dfdfdf;
+  background-color: #fff0f6;
+  -webkit-box-shadow: 1px 5px 10px #cbcbcb;
+          box-shadow: 1px 5px 10px #cbcbcb;
+}
+
+.searchViewContainer .map-view .bottomNav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.searchViewContainer .map-view .bottomNav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+.searchViewContainer .map-view .bottomNav__icon img {
+  width: 38%;
+}
+
+.searchViewContainer .map-view .bottomNav__icon p {
+  margin: 1% 0 0 0;
+}
+
+.searchViewContainer .map-view .infowindow-style {
+  width: 180px;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.searchViewContainer .map-view .infowindow-style .scoreColor {
+  font-weight: bold;
+  color: #830e4b;
+}
+
+.searchViewContainer .map-view .bizPhoto {
+  width: 100px;
+  height: 100px;
+}
+
+.source-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100vw;
+  height: 100vh;
+  background: url("../src/Capstone_Assets/hands-heart-love_2_light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.source-view .source-view__main {
+  color: #707070;
+  margin: 0 7% 0 8%;
+}
+
+.source-view .source-view__main .heading {
+  margin-top: 25%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.source-view .source-view__main .overview {
+  margin-top: 3%;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.source-view .source-view__main .title {
+  margin-top: 15%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.source-view .source-view__main .details {
+  font-size: 14px;
+}
+
+.source-view .source-view__main .fineprint {
+  margin-top: 25%;
+  font-size: 10px;
+}
+
+.source-view .bottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 1vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96vw;
+  height: 9vh;
+  color: #3b1e3b;
+  font-weight: bold;
+  border: solid 1px #dfdfdf;
+  border-radius: 2px;
+  background: #fff0f6;
+  -webkit-box-shadow: 1px 5px 10px #cbcbcb;
+          box-shadow: 1px 5px 10px #cbcbcb;
+}
+
+.source-view .bottomNav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.source-view .bottomNav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+.source-view .bottomNav__icon img {
+  width: 38%;
+}
+
+.source-view .bottomNav__icon p {
+  margin: 1% 0 0 0;
+}
+
+.home-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100vw;
+  height: 100vh;
+  background: url("../src/Capstone_Assets/hands-heart-love_2_light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-view .home-view__main {
+  color: #707070;
+  margin: 0 7% 0 8%;
+}
+
+.home-view .home-view__main .heading {
+  margin-top: 25%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-view .home-view__main .overview {
+  margin-top: 3%;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.home-view .home-view__main .overview span {
+  font-weight: bold;
+}
+
+.home-view .bottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 1vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96vw;
+  height: 9vh;
+  color: #3b1e3b;
+  font-weight: bold;
+  border: solid 1px #dfdfdf;
+  border-radius: 2px;
+  background: #fff0f6;
+  -webkit-box-shadow: 1px 5px 10px #cbcbcb;
+          box-shadow: 1px 5px 10px #cbcbcb;
+}
+
+.home-view .bottomNav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-view .bottomNav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+.home-view .bottomNav__icon img {
+  width: 38%;
+}
+
+.home-view .bottomNav__icon p {
+  margin: 1% 0 0 0;
+}
+/*# sourceMappingURL=App.css.map */
