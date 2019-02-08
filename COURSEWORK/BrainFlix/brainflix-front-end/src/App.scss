@@ -1,0 +1,1070 @@
+//*********** SASS VARIABLES ***************
+$color-black: #111111;
+$color-grey4: #888888;
+$color-grey3: #D4D4D4;
+$color-grey1: #F8F8F8;
+$color-white: #FFFFFF;
+$button-blue: #0095FF;
+
+
+//********** FONT SETUP STARTS *************
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('./Fonts/roboto-bold-webfont.woff2') format('woff2'),
+       url('./Fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('./Fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('./Fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('./Fonts/roboto-medium-webfont.woff2') format('woff2'),
+       url('./Fonts/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+//********** FONT SETUP ENDS *************
+
+//********** MIXINS START *************
+@mixin flex-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@mixin flex-row-end {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@mixin flex-row-center {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@mixin flex-column-center {
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-row-only {
+  display:flex;
+  flex-direction: row;
+}
+
+@mixin font-med-14 {
+  font-size: 14px;
+  font-family: 'roboto-medium';
+}
+
+@mixin font-med-12 {
+  font-size: 12px;
+  font-family: 'roboto-medium';
+}
+
+@mixin border-outline {
+  border: none;
+  outline: none;
+}
+
+
+//********** MIXINS END *************
+//********** MAIN STYLING STARTS **********
+html {
+  font-family: 'roboto-regular';
+}
+
+.largeContainer {
+  @include flex-column;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  //********** NAVIGATION BAR STYLING STARTS **********
+  .navBar{
+    @include flex-row;
+    width: 100%;
+    min-height: 88px;
+    box-shadow: 0px 5px 5px $color-grey1;
+  }
+  .navBar__logo{
+    @include flex-row-center;
+    align-items: center;
+    width: 33%;
+    img {
+      width: 112px;
+      height: 25px;
+    }
+  }
+  .navBar__search{
+    @include flex-row-center;
+    align-items: center;
+    width: 611px;
+
+    form {
+      @include flex-row;
+      align-items: center;
+
+      input {
+        width: 393px;
+        background-color: $color-white;
+        border: solid $color-grey3 1px; 
+        border-radius: 2px;
+        height: 40px;
+        font-size: 16px;
+        padding: 0 0 0 13px;
+      }
+      input:focus {
+        outline: 1px solid $button-blue
+      }
+      button{
+        width: 109px;
+        background-color: $color-grey1;
+        border: solid $color-grey3 1px; 
+        border-radius: 2px;
+        height: 44px;
+      }
+    }
+  }
+  .navBar__sharing{
+    @include flex-row-end;
+    align-items: center;
+    width: 32%;
+
+    img {
+      width: 36px;
+      height: 33px;
+    }
+
+  }
+  .navBar__acctSettings{
+    @include flex-row;
+    align-items: center;
+    width: 16%;
+    padding-left: 4%;
+    .crop{
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius:100%;
+    }
+
+  }
+  .navBar__searchMobile {
+    display: none;
+  }
+  //********** NAVIGATION BAR STYLING ENDS **********
+  //********** MAIN BODY CONTENT STYLING STARTS **********
+  .main{
+    @include flex-row;
+    width: 100%;
+  }
+  .main__body{
+    @include flex-column;
+    margin-left: 120px;
+    width: 62%;
+    .vidPlayer{
+      @include flex-column;
+      padding-top: 30px;
+      width: 100%;
+      video{
+        display:flex;
+        width: 100%;
+      }
+      .vidDescription{
+        padding: 28px 0px 0px 0px;
+        font-size: 17.5px;
+        display:flex;
+        color: #111111;
+        width: 100%;
+      }
+      .vidMetrics{
+        @include flex-row-only;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        border-bottom: $color-grey3 1px solid;
+        width: 100%;
+        font-family: 'roboto-bold';
+      }
+      .vidMetrics__views{
+        padding: 13px 0px 0px 0px;
+        color: $color-grey4;
+        display: flex;
+        opacity: 0.7;
+        width: 50%;
+
+      }
+      .vidMetrics__actions {
+        @include flex-row-end;
+        width: 50%;
+        .likes{
+          @include flex-row-center;
+          opacity: 0.8;
+          font-size: 12px;
+          color: $color-grey4;
+          padding-top: 8px;
+  
+          div {
+            padding: 5px 0px 0px 9px;
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .dislikes{
+          @include flex-row-center;
+          opacity: 0.8;
+          font-size: 12px;
+          color: $color-grey4;
+          padding-top: 11px;
+          margin: 0% 6%;
+  
+          div {
+            padding: 2px 0px 0px 8px;
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .shares{
+          @include flex-row-center;
+          opacity: 0.8;
+          font-size: 12px;
+          color: $color-grey4;
+          padding: 11px  0px 0px 0px;
+
+          div {
+            padding: 2px 0px 0px 8px;
+          }
+          img {
+            width: 17px;
+            height: 16px;
+          }
+        }
+      }
+    }
+    .descriptionSection{
+      @include flex-column;
+      margin-top: 14px;
+      width: 100%;
+      .row1{
+        @include flex-row;
+        width: 100%;
+      }
+      .row1__sourceInfo {
+        @include flex-row;
+        width: 100%;
+
+        .sourcePic{
+          @include flex-row-only;
+          margin-right: 18px;
+          width: 48px;
+          height: 48px;
+          background: $color-grey3;
+          border-radius: 50%;
+        }
+        .sourceName{
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-bottom: 6px;
+          width: 72%;
+          margin-right: 7%;
+          .name{
+            @include flex-row-only;
+            font-size: 13px;
+            font-family: 'roboto-bold';
+            color: #111111;
+            margin-bottom: 3px;
+  
+          }
+          .publishedOn{
+            @include flex-row-only;
+            font-size: 12px;
+            color: $color-grey4;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .row1__subscribe{
+        @include flex-row-end;
+        align-items: center;
+        width: 50%;
+
+        .button-container {
+          @include flex-row-only;
+          justify-content: space-around;
+          align-items: center;
+          width: 160px;
+          height: 40px;
+          background-color: $button-blue;
+          border-radius: 2px;
+
+          .subLeft{
+            @include flex-row-only;
+            @include font-med-14;
+            color: $color-white;
+          }
+          .subRight{
+            @include flex-row-only;
+            @include font-med-14;
+            color: $color-grey3;
+          }
+
+        }
+
+      }
+      .row2{
+        @include flex-row;
+        align-items: center;
+        width: 100%;
+        .comment{
+          @include flex-row-only;
+          @include font-med-12;
+          opacity: 0.8;
+          color: $color-black;
+          margin: 1% 0% 1% 66px;
+        }
+      }
+      .row3{
+        @include flex-row;
+        width: 100%;
+        flex-wrap: wrap;
+        .showMore{
+          display: flex;
+          color: $color-grey4;
+          font-size: 13px;
+          font-family: 'roboto-medium';
+          opacity: 0.8;
+          margin-left: 66px;
+        }
+        .bottomDivider {
+          @include flex-row;
+          padding-bottom: 26px;
+          width: 100%;
+          margin-left: 66px;
+          border-bottom: $color-grey3 1px solid;
+        }
+      }
+    }
+  }
+  .commentsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2%;
+
+    .createCommentSection{
+      @include flex-row;
+      width: 100%;
+      
+      .bioImage {
+        @include flex-row;
+        align-items: center;
+        width: 66px;
+        padding-bottom: 3%;
+        margin-right: 1%;
+        .crop{
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius:100%;
+        }
+      }
+      .addComment {
+        width: 100%;
+        .form {
+          @include flex-column;
+          width: 100%;
+        }
+        .form__input {
+          @include border-outline;
+          width: 100%;
+          border-bottom: 1px solid $color-grey3;
+          font-size: 12px;
+        }
+        .form__input:focus{
+          border-bottom: 1px solid $color-black;
+        }
+        .form__actions {
+        @include flex-row-end;
+        margin-top: 1%;
+        width: 100%;
+        align-items: center;
+        button {
+          @include flex-row-center;
+          @include font-med-14;
+          @include border-outline;
+          align-items: center;
+          width: 120px;
+          height: 40px;
+          background-color: $button-blue;
+          border-radius: 2px;
+          color: $color-white;
+        }
+        }    
+      }
+      .cancelLink {
+        font-size: 13px;
+        font-family: 'roboto-bold';
+        color: $color-black;
+        padding-right: 3%;
+      }
+    }
+    
+    .postedCommentsSection{
+      @include flex-column;
+      width: 100%;
+    
+      .commentSlot {
+        @include flex-row;
+        width: 100%;
+
+        .commentSlot__img {
+          @include flex-row;
+          align-items: center;
+          width: 66px;
+          padding-bottom: 3%;
+          .crop{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius:100%;
+          }
+        }
+        .commentSlot__text {
+          @include flex-column;
+          width: 83%;
+
+          .topRow {
+            @include flex-row;
+            width: 100%;
+            .username {
+              @include font-med-12;
+              opacity: 0.8;
+              color: $color-black;
+              width: auto;
+              margin-right: 2%;
+            }
+            .postRecency{
+              font-size: 12px;
+              color: $color-grey4;
+              width: 65%;
+            }
+          }
+          .bottomRow {
+            font-size: 12px;
+            margin-top: 1%;
+    
+          }
+        }
+      }
+    }
+    
+    
+  }
+  //********** MAIN BODY CONTENT STYLING ENDS **********
+  //********** MAIN VIDEO SIDEBAR STYLING STARTS **********
+  .main__sideBar{
+    @include flex-column;
+    padding: 35px 0px 0px 25px;
+    width: 38%;
+
+    .vidQueue{
+      @include flex-column;
+      font-size: 13px;
+      width: 100%;
+      font-family: 'roboto-medium';
+
+      a {
+        text-decoration: none;
+      }
+
+      .vidSlot {
+        @include flex-row;
+        margin-top: 6px;
+        width: 100%;
+        text-decoration: none;
+        position: relative;
+
+        .vidThumbs{
+          padding: 10px 0px 0px 0px;
+          object-fit: cover;
+          width: 172px;
+          height: 100px;
+          margin-right: 2px;
+        }
+        .duration {
+          position: absolute;
+          top: 82px;
+          left: 117px;
+          text-align: center;
+          background-color: $color-black;
+          opacity: 0.6;
+          color: $color-white;
+          height: 20px;
+          width: 45px;
+          z-index: 1000;
+          font-family: 'roboto-bold';
+        }
+        .textBox {
+          @include flex-column;
+          flex-wrap: wrap;
+          margin-top: 8px;
+          margin-left: 7px;
+          width: 50%;
+
+        
+          .title {
+            display:flex;
+            font-size: 14px;
+            font-family: 'roboto-bold';
+            color: $color-black;
+
+          }
+          .sportsOrg{
+            @include font-med-12;
+            display:flex;
+            width: 100%;
+            color: $color-grey4;
+            opacity: 0.7;
+            margin: 8px 0px;
+          }
+          .viewsServed{
+            @include font-med-12;
+            display:flex;
+            color: $color-grey4;
+            opacity: 0.7;
+
+          }
+        }
+      }
+    }
+  }
+  .uploaderContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-grey1;
+    font-family: 'roboto-regular';
+    a{
+      color:inherit;
+      text-decoration: none;
+    }
+  }
+  .uploaderContainer__img {
+    @include flex-column-center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 8%;
+    width: 750px;
+    height: 450px;
+    background-color: $color-white;
+    border: 1px solid $color-grey3;
+  }
+  .uploaderContainer__heading {
+    margin: 2% 0%;
+    font-size: 18px;
+
+  }
+  .uploaderContainer__info {
+    color: $color-grey4;
+    font-size: 16px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .uploadForm {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-grey1;
+    font-family: 'roboto-regular';
+  
+    #uploadPageForm {
+      @include flex-column;
+      align-items: flex-start;
+      margin: 5% 0% 0% 8%;
+      width: 650px;
+      height: 450px;
+      background-color: $color-white;
+      border: 1px solid $color-grey3;
+      .firstRow {
+        @include flex-row;
+        align-items: baseline;
+        width: 95%;
+        padding: 4% 1% 1% 4%;
+        div {
+          margin-right: 1%;
+        }
+        #title {
+          width: 33%;
+          padding: 5px 0px 5px 10px;
+          margin: 0px 0px 20px 0px;
+          font-size: 16px;
+        }
+        #title:focus {
+          outline: 1px solid $button-blue
+        }
+      }
+      .secondRow {
+        @include flex-row;
+        align-items: baseline;
+        width: 95%;
+        padding: 1% 1% 1% 4%;
+        div {
+          margin-right: 1%;
+        }
+        #description {
+          width: 70%;
+          padding: 5px 0px 5px 10px;
+          margin: 0px 0px 20px 0px;
+          font-size: 16px;
+          height: 100px;
+        }
+        #description:focus {
+          outline: 1px solid $button-blue
+        }
+      }
+    }
+    .publishBox {
+      @include flex-row-end;
+      margin-top: 1%;
+      width: 100%;
+      align-items: center;
+      button {
+        @include flex-row-center;
+        @include font-med-14;
+        @include border-outline;
+        align-items: center;
+        width: 120px;
+        height: 40px;
+        background-color: $button-blue;
+        border-radius: 2px;
+        color: $color-white;
+        margin-right: 13%;
+
+      }
+    }  
+  }
+//********** MAIN VIDEO SIDEBAR STYLING ENDS **********
+//********** MEDIA QUERIES BEGIN **********
+//Large screen widths styling followed by medium and smaller widths' styling below.
+
+@media (min-width: 800px)
+and (max-width: 1200px){
+  .navBar {
+    .navBar__logo {
+      padding-left: 1%;
+    }
+  }
+  .main {
+    @include flex-column-center;
+  }
+  .main__body {
+    width: 95%;
+    margin: 0% 0%;
+  }
+  .main__sideBar {
+    width: 95%;
+    padding: 35px 0px 0px 0px;
+    .vidQueue {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      a {
+        width: 50%;
+      }
+
+      .sidebar-heading {
+        width: 100%;
+      }
+      .vidSlot {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 660px)
+and (max-width: 800px) {
+  .navBar {
+    .navBar__logo {
+    padding-left: 3%;
+    }
+  }
+  .navBar__search{
+    form {
+      input {
+        width: 245px;
+
+      }
+      input:focus {
+        outline: 1px solid $button-blue
+      }
+    }
+  }
+  .navBar__sharing {
+    width: 17%;
+  }
+  .navBar__acctSettings {
+    padding-right: 2%;
+  }
+  .main {
+    @include flex-column-center;
+  }
+  .main__body {
+    width: 95%;
+    margin: 0% 0%;
+  }
+  .main__sideBar {
+    width: 95%;
+    padding: 35px 0px 0px 0px;
+    .vidQueue {
+      flex-direction: row;
+      flex-wrap: wrap;
+      a {
+        width: 50%;
+      }
+
+      .sidebar-heading {
+        width: 100%;
+      }
+      .vidSlot {
+        width: 100%;
+      }
+    }
+  }
+  .postedCommentsSection {
+    margin-top: 1%;
+  }
+}
+
+@media (min-width: 400px)
+and (max-width: 659px){
+  .navBar {
+    min-height: 115px;
+    flex-wrap: wrap;
+    .navBar__logo {
+    padding-left: 3%;
+    }
+  }
+  .navBar__search {
+    display: none;
+  
+  }
+  .navBar__sharing {
+    width: 41%;
+  }
+  .navBar__searchMobile {
+    @include flex-row-center;
+    align-items: center;
+    width: 611px;
+
+    form {
+      @include flex-row;
+      align-items: center;
+
+
+      input {
+        width: 263px;
+        background-color: $color-white;
+        border: solid $color-grey3 1px; 
+        border-radius: 2px;
+        height: 40px;
+        font-size: 16px;
+        padding: 0 0 0 13px;
+      }
+      input:focus {
+        outline: 1px solid $button-blue
+      }
+      button{
+        width: 109px;
+        background-color: $color-grey1;
+        border: solid $color-grey3 1px; 
+        border-radius: 2px;
+        height: 44px;
+      }
+    }
+
+  }
+  .navBar__acctSettings {
+    padding-right: 3%;
+  }
+  .main {
+    @include flex-column-center;
+  }
+  .main__body {
+    width: 95%;
+    margin: 0% 0%;
+    .descriptionSection {
+      .row1__sourceInfo {
+        .sourceName {
+          width: 38%;
+          margin-right: 7%;
+        }
+      }
+    }
+  }
+  .main__sideBar {
+    width: 95%;
+    padding: 35px 0px 0px 0px;
+    .vidQueue {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      .vidSlot {
+
+        .textBox {
+          width: 72%;
+        }
+      }
+    }
+  }
+  .postedCommentsSection {
+    margin-top: 1%;
+  }
+  .uploadForm {
+    #uploadPageForm {
+      width: 100%;
+      margin: 0% 1%;
+    }
+  }
+}
+@media (min-width: 328px)
+and (max-width: 399px){
+  .navBar {
+    min-height: 115px;
+    flex-wrap: wrap;
+    .navBar__logo {
+    padding-left: 3%;
+      img {
+        padding-left: 5%;
+      }
+    }
+  }
+  .navBar__search {
+    display: none;
+  }
+  .navBar__sharing {
+    width: 41%;
+  }
+  .navBar__acctSettings {
+    padding-right: 3%;
+  }
+  .navBar__searchMobile {
+    @include flex-row-center;
+    align-items: center;
+    width: 611px;
+
+    form {
+      @include flex-row;
+      align-items: center;
+
+      input {
+        width: 185px;
+        background-color: $color-white;
+        border: solid $color-grey3 1px; 
+        border-radius: 2px;
+        height: 40px;
+        font-size: 16px;
+        padding: 0 0 0 13px;
+      }
+      input:focus {
+        outline: 1px solid $button-blue
+      }
+      button{
+        width: 109px;
+        background-color: $color-grey1;
+        border: solid $color-grey3 1px; 
+        border-radius: 2px;
+        height: 44px;
+      }
+    }
+  }
+  .main {
+    @include flex-column-center;
+  }
+  .main__body {
+    width: 95%;
+    margin: 0% 0%;
+    .vidPlayer {
+      .vidMetrics__views {
+        align-items: center;
+      }
+      .vidMetrics__actions {
+        .likes {
+          @include flex-column-center;
+          div {
+            padding: 6px 0px 0px 0px;
+          }
+        }
+        .dislikes {
+          flex-direction: column;
+          align-items: center;
+          margin: 0% 10% 0% 13%;
+          div {
+            padding: 4px 0px 0px 0px;
+          }
+        }
+        .shares {
+          @include flex-column-center;
+          div {
+            padding: 7px 0px 0px 0px;
+          }
+        }
+      }
+    }
+    .descriptionSection {
+      .row1__sourceInfo {
+        .sourceName {
+          width: 38%;
+          margin-right: 7%;
+        }
+      }
+    }
+  }
+  .main__sideBar {
+    width: 95%;
+    padding: 35px 0px 0px 0px;
+    .vidQueue {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      
+      .vidSlot {
+        .textBox {
+          width: 72%;
+        }
+      }
+    }
+  }
+  .postedCommentsSection {
+    margin-top: 3%;
+  }
+  .uploadForm {
+    #uploadPageForm {
+      width: 100%;
+      margin: 0% 1%;
+    }
+  }
+}
+@media (min-width: 0px)
+and (max-width: 327px){
+  .navBar {
+    .navBar__logo {
+    padding-left: 9px;
+      img {
+        padding-left: 5px;
+      }
+    }
+  }
+  .navBar__search {
+    justify-content: flex-end;
+    form {
+      input {
+        display: none;
+      }
+      button {
+        width: 47px;
+        background-color: $color-white;
+        border: none;
+        border-radius: 2px;
+        height: 44px;
+      }
+    } 
+  }
+  .navBar__sharing {
+    width: 36px;
+  }
+  .navBar__acctSettings {
+    padding-right:  10px;
+  }
+  .main {
+    @include flex-column-center;
+  }
+  .main__body {
+    width: 310.64px;
+    margin: 0% 0%;
+    .vidPlayer {
+      .vidMetrics__views {
+        align-items: center;
+      }
+      .vidMetrics__actions {
+        .likes {
+          @include flex-column-center;
+          div {
+            padding: 6px 0px 0px 0px;
+          }
+        }
+        .dislikes {
+          @include flex-column-center;
+          margin: 0px 13px 0px 15px;
+          div {
+            padding: 4px 0px 0px 0px;
+          }
+        }
+        .shares {
+          @include flex-column-center;
+          div {
+            padding: 7px 0px 0px 0px;
+          }
+        }
+      }
+    }
+    .descriptionSection {
+      .row1__sourceInfo {
+        .sourceName {
+          width: 59.02px;
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+  .main__sideBar {
+    width: 310.64px;
+    padding: 35px 0px 0px 0px;
+    .vidQueue {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      
+      .vidSlot {
+        .textBox {
+          width: 129.64px;
+        }
+      }
+    }
+  }
+  .postedCommentsSection {
+    margin-top: 3%;
+  }
+}
+}
+//********** MEDIA QUERIES END **********
