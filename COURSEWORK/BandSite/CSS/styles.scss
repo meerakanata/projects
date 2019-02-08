@@ -1,0 +1,787 @@
+$font-stack: 'Poppins', sans-serif;
+$font-color-dark:#000000; 
+$font-color-light: #FFFFFF;
+$back-color-light: #FFFFFF;
+$button-back-color:#A0A0A0;
+$font-size-nav: 18px;
+$font-size-mainheading: 84px;
+$font-size-headings: 64px;
+$font-size-subheadings: 36px;
+$font-size-titles: 24px;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+@mixin flexBoxFormatFlexStart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@mixin flexBoxFormatCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@mixin heroFormatting {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+@mixin headerTextStyling {
+    font-family: $font-stack;
+    color: $font-color-light;
+}
+@mixin frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+@mixin titleBox {
+    width: 93%;
+    font-family: $font-stack;
+    color: $font-color-dark;
+    font-size: $font-size-headings;
+    font-weight: $font-weight-bold;
+    padding: 9% 0% 0% 7%;
+}
+@mixin bottomBox {
+    @include flexBoxFormatFlexStart;
+    width: 88%;
+    font-family: $font-stack;
+    color: $font-color-dark;
+    padding: 2% 5% 5% 7%;
+}
+@mixin buttonStyling {
+    width: 200px;
+    height: 55px;
+    border: solid $font-color-light 2px;
+    border-radius: 4px;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $font-weight-semibold;
+    color: $font-color-light  
+}
+body {
+    margin: 0;
+}
+.largeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    .heroFrame_shows {
+        @include heroFormatting;
+        background:
+            linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+            ),
+            url("../Assets/Images/hanny-naibaho-388579-unsplash.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .navigationBox {
+            @include flexBoxFormatFlexStart;
+            @include headerTextStyling;
+            width: 100%;
+            padding: 1% 0% 4% 0%;
+            font-weight: $font-weight-semibold;
+            font-size: $font-size-nav;
+        }
+        .navigationBox__left {
+            @include flexBoxFormatFlexStart;
+            width: 50%;
+        }
+        .navigationBox__left a {
+            padding-left: 15%;
+            width: 100%;
+        }
+        .navigationBox__right {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 50%;
+        }
+        .navigationBox__right a {
+            padding-right: 9%;
+            margin-right: 6%;
+            color: white;
+            text-decoration: none;
+        }
+        .shows_titleBox {
+            @include titleBox;
+            height: 10%;
+            color: $font-color-light;
+            padding: 0% 0% 0% 7%;
+        }
+        .shows_bottomBox {
+            @include bottomBox;
+            height: 58%;
+            color: $font-color-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .showsData {
+                color: $font-color-light;
+                width: 97%;
+                height: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .rowDiv {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    .dayDiv{
+                        color: $font-color-light;
+                    }
+                    .locationDiv{
+                        color: $font-color-light;
+                    }
+                    .buttonDiv {
+                        color: $font-color-light;
+                    }
+
+                }
+            }
+        }
+    }
+    .heroFrame {
+        @include heroFormatting;
+        min-height: 100%;
+        background-image: url("../Assets/Images/ana-grave-156852-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .navigationBox {
+            @include flexBoxFormatFlexStart;
+            @include headerTextStyling;
+            width: 100%;
+            height: 10%;
+            padding: 1% 0% 0% 0%;
+            font-weight: $font-weight-semibold;
+            font-size: $font-size-nav;
+        }
+        .navigationBox__left {
+            @include flexBoxFormatFlexStart;
+            width: 50%;
+        }
+        .navigationBox__left a {
+            padding-left: 15%;
+            width: 100%;
+        }
+        .navigationBox__right {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 50%;
+        }
+        .navigationBox__right a {
+            padding-right: 9%;
+            margin-right: 6%;
+            color: white;
+            text-decoration: none;
+        }
+        .dateBox {
+            @include flexBoxFormatCenter;
+            @include headerTextStyling;
+            width: 100%;
+            line-height: 95%;
+            font-size: $font-size-mainheading;
+            font-weight: $font-weight-bold;
+            padding: 15% 0% 0% 0%;
+        }
+        .releaseInfoBox {
+            @include flexBoxFormatCenter;
+            @include headerTextStyling;
+            font-size: 36px;
+            font-weight: 300;
+            width: 100%;
+            height: 8%;
+            padding: 1% 0% 0% 0%;
+        }
+        .buttonBox {
+            @include flexBoxFormatCenter;
+            width: 100%;
+            height: 22%;
+            padding: 2% 0% 8% 0%;
+        }
+        .buttonBox_button {
+            @include flexBoxFormatCenter;
+            @include buttonStyling;
+            background-color: $button-back-color;
+        }
+        .buttonBox_button a {
+            @include headerTextStyling;
+            font-size: $font-size-nav;
+            font-weight: $font-weight-semibold;
+            padding: 15px 20px;
+        }
+    }
+    .aboutFrame {
+        @include frame;
+        //min-height: 100%;
+        .about_titleBox {
+            @include titleBox;
+        }
+        .about_bottomBox {
+            @include bottomBox;
+            //min-height: 100%;
+        }
+        .about_bottomBox__left {
+            width: 40%;
+            font-family: $font-stack;
+            font-size: $font-size-titles;
+            font-weight: $font-weight-semibold;
+            padding: 0% 7% 0% 0%;
+        }
+        .about_bottomBox__right {
+            width: 60%;
+            font-family: $font-stack;
+            font-size: 20px;
+            line-height: 200%;
+            padding: 0% 10% 0% 0%;
+        }
+    }
+    .musicFrame {
+        @include frame;
+        background-color: #F9F9F9;
+
+        .music_titleBox {
+            @include titleBox;
+        }
+        .music_bottomBox {
+            @include bottomBox;
+        }
+        .music_bottomBox__left {
+            width: 35%;
+            padding: 0% 2% 0% 0%;
+
+            .bandCamp {
+                margin-top: -7px;
+                border: 0; 
+                width: 326px; 
+                height: 120px;
+            }
+        }
+        .music_bottomBox__left img {
+            width: 326px;
+            height: 326px;
+        }
+        .music_bottomBox__right {
+            width: 65%;
+            font-family: $font-stack;
+            font-size: 20px;
+            line-height: 200%;
+            padding: 0% 8% 0% 0%;
+        }
+        .music_bottomBox__right--heading {
+            font-size: $font-size-titles;
+            padding-bottom: 2%;
+        }
+        .music_bottomBox__right--heading a {
+            font-weight: $font-weight-semibold;
+        }
+    }
+    .galleryFrame {
+        @include frame;
+
+        .gallery_titleBox {
+            @include titleBox;
+        }
+        .gallery_bottomBox {
+            @include bottomBox;
+        }
+        .gallery_bottomBox__container {
+            width: 100%;
+
+            .imageGrid {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .imgSize {
+                    width: 285px;
+                    height: 285px;
+                    padding: 4px 4px;
+                }
+            }
+
+        }
+    }
+    .commentsFrame {
+        @include frame;
+        background-color: #F9F9F9;
+        color: #000000;
+
+        .comments_titleBox {
+            @include titleBox;
+        }
+        .comments_bottomBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 88%;
+            padding: 2% 5% 5% 7%;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                font-family: $font-stack;
+                padding: 1% 0% 0% 0%;
+
+                div {
+                    a {
+                        font-size: $font-size-titles;
+                        font-weight: $font-weight-bold;
+                        padding: 0px 0px 30px 0px;
+                    }
+                    #userName {
+
+                        width: 100%;
+                        padding: 8px 0px 8px 10px;
+                        margin: 0px 0px 20px 0px;
+                        font-size: $font-size-titles;
+                    }
+                    #userComment {
+
+                        width: 100%;
+                        padding: 10px 0px 70px 10px;
+                        margin: 0px 0px 20px 0px;
+                        font-size: $font-size-titles;
+                        
+                    }
+                    
+                }
+                button {
+                    border: none;
+                    width: 200px;
+                    height: 55px;
+                    padding: 0%;
+                    margin-bottom: 5%;
+                    .submitButtonBox {
+                        @include flexBoxFormatCenter;
+                        width: 100%;
+                        height: 22%;
+                    }
+                    .submitButtonBox_button {
+                        @include flexBoxFormatCenter;
+                        @include buttonStyling;
+                        background-color:#000000;
+                    }
+                    .submitButtonBox_button a {
+                        @include headerTextStyling;
+                        font-size: $font-size-nav;
+                        font-weight: $font-weight-semibold;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .contactFrame {
+        @include frame;
+        background-color:#272727;
+        .contact_titleBox {
+            @include titleBox;
+            color: $font-color-light;
+        }
+        .contact_bottomBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 93%;
+            font-family: $font-stack;
+            color: $font-color-light;
+            padding: 2% 0% 5% 7%;
+            .contact_bottomBox__columns {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 75%;
+                padding: 2% 0% 0% 0%;
+                .eachColumn {
+                    width: 30%;
+                    padding: 0% 0% 5% 0%;
+                    a {
+                        font-weight: $font-weight-semibold;
+                    }
+                    .column_body {
+                        font-weight: 300;
+                        opacity: 0.7;
+                        line-height: 45%;
+                    }
+                }
+                .middle {
+                    width: 30%;
+                    margin: 0% 0% 5% 0%;
+                    a {
+                        font-weight: $font-weight-semibold;
+                    }
+                    .column_body {
+                        font-weight: 300;
+                        opacity: 0.7;
+                        line-height: 45%;
+                    }
+                }
+            }
+
+            .contact_bottomBox__logos {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+            .contact_bottomBox__logos--padding {
+               padding: 0% 8% 0% 8%;
+            }
+            .contact_bottomBox__copyright {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                font-size: 10px;
+                padding-top: 14%;
+            }
+        }
+    }
+    .containerComments {
+        width: 45%;
+        font-family: $font-stack;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .row1{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-top: 1px solid #D7D7D7; 
+    }
+    .row2{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+    .row3{
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .row1__name {
+
+        font-size:14px; 
+        font-weight:bold; 
+        padding-bottom:1%;
+        margin-right: 5%;
+
+    }
+    .row1__date {
+
+        font-size:14px; 
+        color: #A0A0A0;
+        font-weight: 300;
+        padding-bottom:1%;
+    }
+    .row2__comment {
+        font-size: 12px;
+        padding-bottom:1%;
+        font-weight: 400;
+    }
+
+    .row3__like {
+        width: 25px;
+        height: 25px;
+    }
+    .row3__counter {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        color: #A0A0A0;
+        font-weight: 300;
+        padding-top: 1%;
+    }
+    .row3:last-child {
+        border-bottom: 1px solid #D7D7D7; 
+    }
+    .rowDiv {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start; 
+        color: $font-color-light;
+        border-bottom:  white 1px solid;
+        line-height: 175%;
+        vertical-align: top;
+        padding: 1% 0%;
+    }
+    .rowDiv:last-child {
+        border-bottom: none;
+    }
+    .dayDiv {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        width: 40%;
+    }
+
+    .venueDiv {
+        font-weight: 300;
+    }
+    .locationDiv {
+        width: 40%;
+        font-weight: 300;
+    }
+    .buttonDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20%;
+        align-items: center;
+        @include buttonStyling;
+        background-color: $button-back-color;
+    }
+    .buttonDiv > a {
+        font-family: $font-stack;
+        font-size: 18px;
+        text-align: center;
+        padding: 12px 36px;
+        color: $font-color-light;
+        font-weight: $font-weight-semibold;
+    }
+    
+    @media (min-width: 0px)
+    and (max-width: 750px)
+    and (orientation:portrait) {
+        .heroFrame {
+            
+            .navigationBox {
+                padding: 1% 0% 0% 0%;
+            }
+            .navigationBox__left a {
+                padding-left: 10%;
+                width: 100%;
+                font-size: 14px;
+            }
+            .navigationBox__right a {
+                padding-right: 5%;
+                margin-right: 5%;
+                font-size: 14px;
+            }
+            .dateBox {
+                font-size: 53px;
+                padding: 60% 0% 0% 0%;
+            }
+            .releaseInfoBox {
+                font-size: 19px;
+                padding: 2% 0% 0% 0%;
+            }
+            .buttonBox {
+                padding: 6% 0% 8% 0%;
+            }
+        
+        }
+        .heroFrame_shows {
+    
+            .navigationBox {
+                padding: 1% 0% 0% 0%;
+            }
+
+            .navigationBox__left a {
+                padding-left: 10%;
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .navigationBox__right a {
+                padding-right: 5%;
+                margin-right: 5%;
+                font-size: 14px;
+            }
+            .shows_titleBox {
+                font-size: 41px;
+                padding: 0% 0% 0% 7%;
+            }
+            .shows_bottomBox {
+
+                .rowDiv {
+                    flex-direction: column;
+                    padding: 1% 0 5% 0%;
+                    align-items: center;
+                    .dayDiv{
+                        width: 100%;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .locationDiv{
+                        width: 100%;
+                        align-items: center;
+                        text-align: center;
+                        padding: 1% 0%;
+                    }
+                }
+            }
+        }
+    
+        .aboutFrame {
+            .about_titleBox {
+                font-size: 41px;
+            }
+            .about_bottomBox {
+                flex-direction: column;
+                width:86%;  
+                padding: 2% 7% 5% 7%;
+            }
+            .about_bottomBox__left {
+                width: 100%;
+                font-size: 14px;
+                padding-bottom: 5px;
+            }
+            .about_bottomBox__right {
+                width: 100%;
+                font-size: 11px;
+                padding: 2% 7% 0% 0%;
+            }
+        }
+        .musicFrame {
+            .music_titleBox {
+                font-size: 41px;
+            }
+            .music_bottomBox {
+                flex-direction: column;
+                width: 86%;
+                padding: 2% 7% 5% 7%;
+            }
+            .music_bottomBox__left {
+                width: 100%;
+                padding: 0% 0% 2% 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .bandCamp {
+                    margin-top: -7px;
+                    border: 0; 
+                    width: 266px; 
+                    height: 120px;
+                }
+            }
+            .music_bottomBox__left img {
+                width: 266px;
+                height: 266px;
+            }
+            .music_bottomBox__right {
+                width: 100%;
+                font-size: 14px;
+                padding: 0% 7% 0% 0%;
+            }
+            .music_bottomBox__right--heading {
+                font-size: 18px;
+            }
+        }
+        .galleryFrame {
+            .gallery_titleBox {
+                font-size: 41px;
+            }
+            .gallery_bottomBox {
+                width: 86%;
+                padding: 2% 7% 5% 7%;
+            }
+            .gallery_bottomBox__container {
+
+                width: 100%;
+                .imageGrid {
+                    justify-content: center;
+                    .imgSize {
+                        width: 262px;
+                        height: 262px;
+
+                    }
+                }
+            }
+        }
+        .commentsFrame {
+            .comments_titleBox {
+                width: 86%;
+                font-size: 41px;
+                padding: 9% 7% 0% 7%;
+            }
+            .comments_bottomBox {
+                width: 86%;
+                padding: 2% 7% 5% 7%;
+            }
+            .comments_bottomBox form {
+                width: 93%;
+                button {
+                    margin-bottom: 10%;
+                }
+            }
+            .comments_bottomBox form div a {
+                font-size: 18px;
+            }
+            .row1 {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .row2 {
+                width: 100%;
+            }
+            .row3 {
+                width: 100%;
+            }
+            .row3__counter {
+                padding-top: 2.5%;
+            }
+        }
+        .contactFrame {
+            .contact_titleBox {
+                font-size: 41px;
+            }
+            .contact_bottomBox {
+                width: 86%;
+                padding: 2% 7% 5% 7%;
+                .contact_bottomBox__columns {
+                    flex-direction: column;
+                }
+                
+            }
+            .contact_bottomBox {
+                width: 86%;
+                padding: 2% 7% 5% 7%;
+                .contact_bottomBox__columns {
+                    flex-direction: column;
+                    .eachColumn {
+                        width: 100%;
+                        padding: 0% 0% 5% 0%;
+                    }
+                    .middle {
+                        width: 100%;
+                    }
+                }
+                .contact_bottomBox__logos--padding {
+                   padding: 0% 13%;
+                   text-align: center;
+                }
+                .contact_bottomBox__copyright {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+

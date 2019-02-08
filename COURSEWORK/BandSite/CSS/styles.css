@@ -1,0 +1,1191 @@
+html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+}
+
+.largeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.largeContainer .heroFrame_shows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../Assets/Images/hanny-naibaho-388579-unsplash.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Assets/Images/hanny-naibaho-388579-unsplash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.largeContainer .heroFrame_shows .navigationBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 1% 0% 4% 0%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.largeContainer .heroFrame_shows .navigationBox__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+}
+
+.largeContainer .heroFrame_shows .navigationBox__left a {
+  padding-left: 15%;
+  width: 100%;
+}
+
+.largeContainer .heroFrame_shows .navigationBox__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.largeContainer .heroFrame_shows .navigationBox__right a {
+  padding-right: 9%;
+  margin-right: 6%;
+  color: white;
+  text-decoration: none;
+}
+
+.largeContainer .heroFrame_shows .shows_titleBox {
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 9% 0% 0% 7%;
+  height: 10%;
+  color: #FFFFFF;
+  padding: 0% 0% 0% 7%;
+}
+
+.largeContainer .heroFrame_shows .shows_bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 88%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  padding: 2% 5% 5% 7%;
+  height: 58%;
+  color: #FFFFFF;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.largeContainer .heroFrame_shows .shows_bottomBox .showsData {
+  color: #FFFFFF;
+  width: 97%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.largeContainer .heroFrame_shows .shows_bottomBox .showsData .rowDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.largeContainer .heroFrame_shows .shows_bottomBox .showsData .rowDiv .dayDiv {
+  color: #FFFFFF;
+}
+
+.largeContainer .heroFrame_shows .shows_bottomBox .showsData .rowDiv .locationDiv {
+  color: #FFFFFF;
+}
+
+.largeContainer .heroFrame_shows .shows_bottomBox .showsData .rowDiv .buttonDiv {
+  color: #FFFFFF;
+}
+
+.largeContainer .heroFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../Assets/Images/ana-grave-156852-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.largeContainer .heroFrame .navigationBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  width: 100%;
+  height: 10%;
+  padding: 1% 0% 0% 0%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.largeContainer .heroFrame .navigationBox__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+}
+
+.largeContainer .heroFrame .navigationBox__left a {
+  padding-left: 15%;
+  width: 100%;
+}
+
+.largeContainer .heroFrame .navigationBox__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.largeContainer .heroFrame .navigationBox__right a {
+  padding-right: 9%;
+  margin-right: 6%;
+  color: white;
+  text-decoration: none;
+}
+
+.largeContainer .heroFrame .dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  width: 100%;
+  line-height: 95%;
+  font-size: 84px;
+  font-weight: 700;
+  padding: 15% 0% 0% 0%;
+}
+
+.largeContainer .heroFrame .releaseInfoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  width: 100%;
+  height: 8%;
+  padding: 1% 0% 0% 0%;
+}
+
+.largeContainer .heroFrame .buttonBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 22%;
+  padding: 2% 0% 8% 0%;
+}
+
+.largeContainer .heroFrame .buttonBox_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 55px;
+  border: solid #FFFFFF 2px;
+  border-radius: 4px;
+  background-color: #A0A0A0;
+}
+
+.largeContainer .heroFrame .buttonBox_button a {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.largeContainer .aboutFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.largeContainer .aboutFrame .about_titleBox {
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 9% 0% 0% 7%;
+}
+
+.largeContainer .aboutFrame .about_bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 88%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  padding: 2% 5% 5% 7%;
+}
+
+.largeContainer .aboutFrame .about_bottomBox__left {
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0% 7% 0% 0%;
+}
+
+.largeContainer .aboutFrame .about_bottomBox__right {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  padding: 0% 10% 0% 0%;
+}
+
+.largeContainer .musicFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #F9F9F9;
+}
+
+.largeContainer .musicFrame .music_titleBox {
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 9% 0% 0% 7%;
+}
+
+.largeContainer .musicFrame .music_bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 88%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  padding: 2% 5% 5% 7%;
+}
+
+.largeContainer .musicFrame .music_bottomBox__left {
+  width: 35%;
+  padding: 0% 2% 0% 0%;
+}
+
+.largeContainer .musicFrame .music_bottomBox__left .bandCamp {
+  margin-top: -7px;
+  border: 0;
+  width: 326px;
+  height: 120px;
+}
+
+.largeContainer .musicFrame .music_bottomBox__left img {
+  width: 326px;
+  height: 326px;
+}
+
+.largeContainer .musicFrame .music_bottomBox__right {
+  width: 65%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  padding: 0% 8% 0% 0%;
+}
+
+.largeContainer .musicFrame .music_bottomBox__right--heading {
+  font-size: 24px;
+  padding-bottom: 2%;
+}
+
+.largeContainer .musicFrame .music_bottomBox__right--heading a {
+  font-weight: 600;
+}
+
+.largeContainer .galleryFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.largeContainer .galleryFrame .gallery_titleBox {
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 9% 0% 0% 7%;
+}
+
+.largeContainer .galleryFrame .gallery_bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 88%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  padding: 2% 5% 5% 7%;
+}
+
+.largeContainer .galleryFrame .gallery_bottomBox__container {
+  width: 100%;
+}
+
+.largeContainer .galleryFrame .gallery_bottomBox__container .imageGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.largeContainer .galleryFrame .gallery_bottomBox__container .imageGrid .imgSize {
+  width: 285px;
+  height: 285px;
+  padding: 4px 4px;
+}
+
+.largeContainer .commentsFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #F9F9F9;
+  color: #000000;
+}
+
+.largeContainer .commentsFrame .comments_titleBox {
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 9% 0% 0% 7%;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 88%;
+  padding: 2% 5% 5% 7%;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  font-family: "Poppins", sans-serif;
+  padding: 1% 0% 0% 0%;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form div a {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0px 0px 30px 0px;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form div #userName {
+  width: 100%;
+  padding: 8px 0px 8px 10px;
+  margin: 0px 0px 20px 0px;
+  font-size: 24px;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form div #userComment {
+  width: 100%;
+  padding: 10px 0px 70px 10px;
+  margin: 0px 0px 20px 0px;
+  font-size: 24px;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form button {
+  border: none;
+  width: 200px;
+  height: 55px;
+  padding: 0%;
+  margin-bottom: 5%;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form button .submitButtonBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 22%;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form button .submitButtonBox_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 55px;
+  border: solid #FFFFFF 2px;
+  border-radius: 4px;
+  background-color: #000000;
+}
+
+.largeContainer .commentsFrame .comments_bottomBox form button .submitButtonBox_button a {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.largeContainer .contactFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #272727;
+}
+
+.largeContainer .contactFrame .contact_titleBox {
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 9% 0% 0% 7%;
+  color: #FFFFFF;
+}
+
+.largeContainer .contactFrame .contact_bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 93%;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  padding: 2% 0% 5% 7%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  padding: 2% 0% 0% 0%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .eachColumn {
+  width: 30%;
+  padding: 0% 0% 5% 0%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .eachColumn a {
+  font-weight: 600;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .eachColumn .column_body {
+  font-weight: 300;
+  opacity: 0.7;
+  line-height: 45%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .middle {
+  width: 30%;
+  margin: 0% 0% 5% 0%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .middle a {
+  font-weight: 600;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .middle .column_body {
+  font-weight: 300;
+  opacity: 0.7;
+  line-height: 45%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__logos--padding {
+  padding: 0% 8% 0% 8%;
+}
+
+.largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 10px;
+  padding-top: 14%;
+}
+
+.largeContainer .containerComments {
+  width: 45%;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.largeContainer .row1 {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 1px solid #D7D7D7;
+}
+
+.largeContainer .row2 {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.largeContainer .row3 {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.largeContainer .row1__name {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 1%;
+  margin-right: 5%;
+}
+
+.largeContainer .row1__date {
+  font-size: 14px;
+  color: #A0A0A0;
+  font-weight: 300;
+  padding-bottom: 1%;
+}
+
+.largeContainer .row2__comment {
+  font-size: 12px;
+  padding-bottom: 1%;
+  font-weight: 400;
+}
+
+.largeContainer .row3__like {
+  width: 25px;
+  height: 25px;
+}
+
+.largeContainer .row3__counter {
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  color: #A0A0A0;
+  font-weight: 300;
+  padding-top: 1%;
+}
+
+.largeContainer .row3:last-child {
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.largeContainer .rowDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #FFFFFF;
+  border-bottom: white 1px solid;
+  line-height: 175%;
+  vertical-align: top;
+  padding: 1% 0%;
+}
+
+.largeContainer .rowDiv:last-child {
+  border-bottom: none;
+}
+
+.largeContainer .dayDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 40%;
+}
+
+.largeContainer .venueDiv {
+  font-weight: 300;
+}
+
+.largeContainer .locationDiv {
+  width: 40%;
+  font-weight: 300;
+}
+
+.largeContainer .buttonDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 55px;
+  border: solid #FFFFFF 2px;
+  border-radius: 4px;
+  background-color: #A0A0A0;
+}
+
+.largeContainer .buttonDiv > a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 12px 36px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+@media (min-width: 0px) and (max-width: 750px) and (orientation: portrait) {
+  .largeContainer .heroFrame .navigationBox {
+    padding: 1% 0% 0% 0%;
+  }
+  .largeContainer .heroFrame .navigationBox__left a {
+    padding-left: 10%;
+    width: 100%;
+    font-size: 14px;
+  }
+  .largeContainer .heroFrame .navigationBox__right a {
+    padding-right: 5%;
+    margin-right: 5%;
+    font-size: 14px;
+  }
+  .largeContainer .heroFrame .dateBox {
+    font-size: 53px;
+    padding: 60% 0% 0% 0%;
+  }
+  .largeContainer .heroFrame .releaseInfoBox {
+    font-size: 19px;
+    padding: 2% 0% 0% 0%;
+  }
+  .largeContainer .heroFrame .buttonBox {
+    padding: 6% 0% 8% 0%;
+  }
+  .largeContainer .heroFrame_shows .navigationBox {
+    padding: 1% 0% 0% 0%;
+  }
+  .largeContainer .heroFrame_shows .navigationBox__left a {
+    padding-left: 10%;
+    width: 100%;
+    font-size: 14px;
+  }
+  .largeContainer .heroFrame_shows .navigationBox__right a {
+    padding-right: 5%;
+    margin-right: 5%;
+    font-size: 14px;
+  }
+  .largeContainer .heroFrame_shows .shows_titleBox {
+    font-size: 41px;
+    padding: 0% 0% 0% 7%;
+  }
+  .largeContainer .heroFrame_shows .shows_bottomBox .rowDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1% 0 5% 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .largeContainer .heroFrame_shows .shows_bottomBox .rowDiv .dayDiv {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .largeContainer .heroFrame_shows .shows_bottomBox .rowDiv .locationDiv {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 1% 0%;
+  }
+  .largeContainer .aboutFrame .about_titleBox {
+    font-size: 41px;
+  }
+  .largeContainer .aboutFrame .about_bottomBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 86%;
+    padding: 2% 7% 5% 7%;
+  }
+  .largeContainer .aboutFrame .about_bottomBox__left {
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .largeContainer .aboutFrame .about_bottomBox__right {
+    width: 100%;
+    font-size: 11px;
+    padding: 2% 7% 0% 0%;
+  }
+  .largeContainer .musicFrame .music_titleBox {
+    font-size: 41px;
+  }
+  .largeContainer .musicFrame .music_bottomBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 86%;
+    padding: 2% 7% 5% 7%;
+  }
+  .largeContainer .musicFrame .music_bottomBox__left {
+    width: 100%;
+    padding: 0% 0% 2% 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .largeContainer .musicFrame .music_bottomBox__left .bandCamp {
+    margin-top: -7px;
+    border: 0;
+    width: 266px;
+    height: 120px;
+  }
+  .largeContainer .musicFrame .music_bottomBox__left img {
+    width: 266px;
+    height: 266px;
+  }
+  .largeContainer .musicFrame .music_bottomBox__right {
+    width: 100%;
+    font-size: 14px;
+    padding: 0% 7% 0% 0%;
+  }
+  .largeContainer .musicFrame .music_bottomBox__right--heading {
+    font-size: 18px;
+  }
+  .largeContainer .galleryFrame .gallery_titleBox {
+    font-size: 41px;
+  }
+  .largeContainer .galleryFrame .gallery_bottomBox {
+    width: 86%;
+    padding: 2% 7% 5% 7%;
+  }
+  .largeContainer .galleryFrame .gallery_bottomBox__container {
+    width: 100%;
+  }
+  .largeContainer .galleryFrame .gallery_bottomBox__container .imageGrid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .largeContainer .galleryFrame .gallery_bottomBox__container .imageGrid .imgSize {
+    width: 262px;
+    height: 262px;
+  }
+  .largeContainer .commentsFrame .comments_titleBox {
+    width: 86%;
+    font-size: 41px;
+    padding: 9% 7% 0% 7%;
+  }
+  .largeContainer .commentsFrame .comments_bottomBox {
+    width: 86%;
+    padding: 2% 7% 5% 7%;
+  }
+  .largeContainer .commentsFrame .comments_bottomBox form {
+    width: 93%;
+  }
+  .largeContainer .commentsFrame .comments_bottomBox form button {
+    margin-bottom: 10%;
+  }
+  .largeContainer .commentsFrame .comments_bottomBox form div a {
+    font-size: 18px;
+  }
+  .largeContainer .commentsFrame .row1 {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .largeContainer .commentsFrame .row2 {
+    width: 100%;
+  }
+  .largeContainer .commentsFrame .row3 {
+    width: 100%;
+  }
+  .largeContainer .commentsFrame .row3__counter {
+    padding-top: 2.5%;
+  }
+  .largeContainer .contactFrame .contact_titleBox {
+    font-size: 41px;
+  }
+  .largeContainer .contactFrame .contact_bottomBox {
+    width: 86%;
+    padding: 2% 7% 5% 7%;
+  }
+  .largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .largeContainer .contactFrame .contact_bottomBox {
+    width: 86%;
+    padding: 2% 7% 5% 7%;
+  }
+  .largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .eachColumn {
+    width: 100%;
+    padding: 0% 0% 5% 0%;
+  }
+  .largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__columns .middle {
+    width: 100%;
+  }
+  .largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__logos--padding {
+    padding: 0% 13%;
+    text-align: center;
+  }
+  .largeContainer .contactFrame .contact_bottomBox .contact_bottomBox__copyright {
+    font-size: 8px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
